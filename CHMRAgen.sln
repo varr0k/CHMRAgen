@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHMRAgen", "CHMRAgen\CHMRAgen.csproj", "{C0B37062-E408-418A-B360-584353E8C997}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0B37062-E408-418A-B360-584353E8C997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B37062-E408-418A-B360-584353E8C997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B37062-E408-418A-B360-584353E8C997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B37062-E408-418A-B360-584353E8C997}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56E9E893-415A-42A3-9072-E8C356034D1A}
+	EndGlobalSection
+EndGlobal

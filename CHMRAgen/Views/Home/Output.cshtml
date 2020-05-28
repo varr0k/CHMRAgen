@@ -1,0 +1,66 @@
+﻿@model CHMRAgen.Models.Character
+
+@{
+    ViewData["Title"] = "Generate";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>@Model.Name</h1>
+        <h3>aka. @Model.Alias</h3>
+        <p class="font-italic">@Model.Description</p>
+
+        <h4 class="pt-3">Archetype: @Model.Archetype.Name</h4>
+        <p class="font-italic">@Model.Archetype.Description</p>
+
+        <h5>Active Effects</h5>
+        @foreach (Effect effect in Model.Archetype.ActiveEffects)
+        {
+            <p class="font-weight-bold">@effect.Name</p>
+            <p class="font-italic">@effect.Description</p>
+            <p>@effect.Text</p>
+            @if (effect.Table != null && effect.Table.Lines.Count() > 0)
+            {
+                <table class="table table-borderless table-sm">
+                    @foreach (RollTableLine line in effect.Table.Lines.OrderBy(l => l.Order))
+                    {
+                        <tr>
+                            <td>@line.Target: @line.Text</td>
+                        </tr>
+                    }
+                </table>
+            }
+        }
+
+        <h5>Passive Effects</h5>
+        @foreach (Effect effect in Model.Archetype.PassiveEffects)
+        {
+            <p class="font-weight-bold">@effect.Name</p>
+            <p class="font-italic">@effect.Description</p>
+            <p>@effect.Text</p>
+            @if (effect.Table != null && effect.Table.Lines.Count() > 0)
+            {
+                <table class="table table-borderless table-sm">
+                    @foreach (RollTableLine line in effect.Table.Lines.OrderBy(l => l.Order))
+                    {
+                        <tr>
+                            <td>@line.Target: @line.Text</td>
+                        </tr>
+                    }
+                </table>
+            }
+        }
+
+        <h4>Feats</h4>
+        @foreach (Feat feat in Model.Feats)
+        {
+            <p class="font-weight-bold">@feat.Name</p>
+            <p>@feat.Description</p>
+        }
+    </div>
+    <div class="col-md-6">
+        <h2>Discord Output</h2>
+        <p class="text-info">Not yet implemented!</p>
+        <textarea class="form-control" id="discordTextArea"></textarea>
+    </div>
+</div>

@@ -1,1 +1,66 @@
-[{"FeatId":0,"Name":"Toughness","Description":"Adds 1 permanent point of Grit per rank to one\u0027s total Grit.","Rank":0,"RankIncrement":1,"GritBonus":1},{"FeatId":1,"Name":"Toughness","Description":"Adds 1 permanent point of Grit per rank to one\u0027s total Grit.","Rank":0,"RankIncrement":1,"GritBonus":1},{"FeatId":2,"Name":"Toughness","Description":"Adds 1 permanent point of Grit per rank to one\u0027s total Grit.","Rank":0,"RankIncrement":1,"GritBonus":1}]
+[
+    {
+        "FeatId": 0,
+        "Name": "Weapon Focus",
+        "Description": "Add +50 per rank to attack rolls with a specific weapon. This trait applies only to normal attack rolls, not class abilities.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 1,
+        "Name": "Aetheric Focus",
+        "Description": "Add +50 per rank in magical normal attacks. This trait applies only to normal attack rolls, not class abilities.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 2,
+        "Name": "Dodge/Defense",
+        "Description": "Add +50 per rank to either dodging or blocking rolls.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 3,
+        "Name": "Leadership",
+        "Description": "Once per combat, add +50 per rank to another\u0027s roll.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 4,
+        "Name": "Stealth",
+        "Description": "Add +75 per rank to stealth rolls.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 5,
+        "Name": "Lockpicking",
+        "Description": "Add +50 per rank to lockpick attempt rolls.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 6,
+        "Name": "Healing",
+        "Description": "Add +50 per rank to healing rolls.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 0
+    },
+    {
+        "FeatId": 7,
+        "Name": "Toughness",
+        "Description": "Adds 1 point per rank to one\u0027s total Grit.",
+        "Rank": 0,
+        "RankIncrement": 1,
+        "GritBonus": 1
+    }
+]

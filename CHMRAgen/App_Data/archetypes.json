@@ -1,1 +1,511 @@
-[{"ArchetypeId":0,"Name":"Aethermaw","Description":"Tanky types that thrive on taunting and draining aether from enemies.","Subtype":"Tank","BaseGrit":10,"ActiveEffects":[{"EffectId":0,"Name":"Aetherdrain","Description":"Can drain aether from aether-wielding enemies - mainly inhibits casters.","Text":"Twice per event, can apply a -100 to a caster enemy\u0027s attack roll.","Table":null},{"EffectId":1,"Name":"Aetherfocus","Description":"Can draw attention to self in the event of random attacks from enemies.","Text":"Twice per event, can take the opportunity to direct a number of enemies\u0027 attention for two rounds.","Table":{"Lines":[{"Target":"901\u002B","Text":"Taunt all enemies","Order":0},{"Target":"601-900","Text":"Taunt all enemies","Order":1},{"Target":"301-600","Text":"Taunt all enemies","Order":2},{"Target":"0-300","Text":"Taunt all enemies","Order":3}]}}],"PassiveEffects":[{"EffectId":2,"Name":"Hardy","Description":"Is granted a \u002B100 passive bonus to all defense rolls for self.","Text":null,"Table":null}]},{"ArchetypeId":1,"Name":"Aethermaw","Description":"Tanky types that thrive on taunting and draining aether from enemies.","Subtype":"Tank","BaseGrit":10,"ActiveEffects":[{"EffectId":0,"Name":"Aetherdrain","Description":"Can drain aether from aether-wielding enemies - mainly inhibits casters.","Text":"Twice per event, can apply a -100 to a caster enemy\u0027s attack roll.","Table":null},{"EffectId":1,"Name":"Aetherfocus","Description":"Can draw attention to self in the event of random attacks from enemies.","Text":"Twice per event, can take the opportunity to direct a number of enemies\u0027 attention for two rounds.","Table":{"Lines":[{"Target":"901\u002B","Text":"Taunt all enemies","Order":0},{"Target":"601-900","Text":"Taunt all enemies","Order":1},{"Target":"301-600","Text":"Taunt all enemies","Order":2},{"Target":"0-300","Text":"Taunt all enemies","Order":3}]}}],"PassiveEffects":[{"EffectId":2,"Name":"Hardy","Description":"Is granted a \u002B100 passive bonus to all defense rolls for self.","Text":null,"Table":null}]}]
+[
+    {
+        "ArchetypeId": 0,
+        "Name": "Aethermaw",
+        "Description": "Tanky types that thrive on taunting and draining aether from enemies.",
+        "Subtype": "Tank",
+        "BaseGrit": 10,
+        "ActiveEffects": [
+            {
+                "EffectId": 0,
+                "Name": "Aetherdrain",
+                "Description": "Can drain aether from aether-wielding enemies - mainly inhibits casters.",
+                "Text": "Twice per event, can apply a -100 to a caster enemy\u0027s attack roll.",
+                "Table": null
+            },
+            {
+                "EffectId": 1,
+                "Name": "Aetherfocus",
+                "Description": "Can draw attention to self in the event of random attacks from enemies.",
+                "Text": "Twice per event, can take the opportunity to direct a number of enemies\u0027 attention for two rounds.",
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Taunt all enemies",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Taunt all enemies",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "301-600",
+                            "Text": "Taunt all enemies",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-300",
+                            "Text": "Taunt all enemies",
+                            "Order": 3
+                        }
+                    ]
+                }
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 2,
+                "Name": "Hardy",
+                "Description": "Is granted a \u002B100 passive bonus to all defense rolls for self.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 1,
+        "Name": "Protector",
+        "Description": "Tanky types that do well in shielding others.",
+        "Subtype": "Tank",
+        "BaseGrit": 10,
+        "ActiveEffects": [
+            {
+                "EffectId": 3,
+                "Name": "Shield Other",
+                "Description": "Can sacrifice attack turns to shield others from incoming damage.",
+                "Text": null,
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "700\u002B",
+                            "Text": "All damage to the target is mitigated.",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "350-699",
+                            "Text": "Half the damage to the target is mitigated.",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "0-349",
+                            "Text": "Block attempt fails - no damage is mitigated.",
+                            "Order": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "EffectId": 4,
+                "Name": "Taunt",
+                "Description": "Can draw attention to self in the event of random attacks from enemies.",
+                "Text": "Twice per event, can take the opportunity to direct a number of enemies\u0027 attention for two rounds.",
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Taunt all enemies",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Taunt all enemies",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "301-600",
+                            "Text": "Taunt all enemies",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-300",
+                            "Text": "Taunt all enemies",
+                            "Order": 3
+                        }
+                    ]
+                }
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 2,
+                "Name": "Hardy",
+                "Description": "Is granted a \u002B100 passive bonus to all defense rolls for self.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 2,
+        "Name": "Backstabber",
+        "Description": "Where'd they go?!",
+        "Subtype": "Damage",
+        "BaseGrit": 8,
+        "ActiveEffects": [
+            {
+                "EffectId": 5,
+                "Name": "Now You See Me...",
+                "Description": "You turn invisible to the naked eye!",
+                "Text": "The character is effectively invisible. Combat will break invisibility. Once invisibility is broken, this ability cannot be used until two (2) turns have passed.",
+                "Table": null
+            },
+            {
+                "EffectId": 6,
+                "Name": "The Pointy End",
+                "Description": "Here's a backstab for you! (requires Now You See Me... to be active.)",
+                "Text": "Three times per event: Add +1 Grit damage to a successful hit. On a roll of 900+, add +2 Grit damage instead!",
+                "Table": null    
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 7,
+                "Name": "Born In It",
+                "Description": "The character begins a fight with Now You See Me... automatically active.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 3,
+        "Name": "Berserker",
+        "Description": "Pain is weakness leaving the body!",
+        "Subtype": "Damage",
+        "BaseGrit": 8,
+        "ActiveEffects": [
+            {
+                "EffectId": 8,
+                "Name": "Rage",
+                "Description": "Fills oneself with rage, adding offense at the cost of defense.",
+                "Text": "Add +300 to your next attack roll, but subtract -400 from your next defense roll.",
+                "Table": null
+            },
+            {
+                "EffectId": 9,
+                "Name": "Whirlwind",
+                "Description": "Throw caution to the wind to hit up to three foes.",
+                "Text": null,
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Deal 3 damage, but take 1 to yourself.",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Deal 2 damage but take 2 to yourself.",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "301-600",
+                            "Text": "Deal 1 damage but take 3 to yourself.",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-300",
+                            "Text": "Deal no damage, but take 3 to yourself.",
+                            "Order": 3
+                        }
+                    ]
+                }
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 10,
+                "Name": "Blind to the Pain",
+                "Description": "Ignores an incapacitation (0hp) once per event.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 4,
+        "Name": "Sentinel",
+        "Description": "First into the fray!",
+        "Subtype": "Damage",
+        "BaseGrit": 8,
+        "ActiveEffects": [
+            {
+                "EffectId": 11,
+                "Name": "Me First!",
+                "Description": "You move to strike first against your foe!",
+                "Text": "Automatically movee to the front of the initiative queue, but start last next turn. (When more than one person activates, roll for who is first/second/third, and then whoever is first goes last, second goes second last, etc.)",
+                "Table": null
+            },
+            {
+                "EffectId": 12,
+                "Name": "Deft Strike",
+                "Description": "You give it your all, but it can wind you easily.",
+                "Text": "Add +200 to your attack roll on this turn, but next turn, subtract -300 from your attack roll.",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 13,
+                "Name": "Vanguard",
+                "Description": "Add +100 to your initiative rolls at the start of any combat.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 5,
+        "Name": "Skirmisher",
+        "Description": "One-on-one combat with or without arms, up close or at range.",
+        "Subtype": "Damage",
+        "BaseGrit": 8,
+        "ActiveEffects": [
+            {
+                "EffectId": 14,
+                "Name": "Focused Attack",
+                "Description": "Can focus their attacks on a single target, making them more devastating.",
+                "Text": "Add +100 to attack rolls against one enemy per encounter, and subtract -100 to attack rolls against every other enemy until your Focus Target is dead.",
+                "Table": null
+            },
+            {
+                "EffectId": 15,
+                "Name": "At a Standstill",
+                "Description": "Can stun their target.",
+                "Text": "Twice per event, on a roll of 750+, the target is stunned for one round.",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 16,
+                "Name": "Martial Training",
+                "Description": "Add +100 to all normal attack rolls made.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 6,
+        "Name": "Sorcerer",
+        "Description": "The aetheric elemental master.",
+        "Subtype": "Damage",
+        "BaseGrit": 8,
+        "ActiveEffects": [
+            {
+                "EffectId": 17,
+                "Name": "Explosion",
+                "Description": "Can create a forceful explosion of their chosen or preferred element.",
+                "Text": "Once per conbat, can hit up to three enemies that are close together.",
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Deal 4 damage.",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Deal 3 damage.",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "301-600",
+                            "Text": "Deal 2 damage.",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-300",
+                            "Text": "Deal 1 damage, but take 1 damage to one's self.",
+                            "Order": 3
+                        }
+                    ]
+                }
+            },
+            {
+                "EffectId": 18,
+                "Name": "Empowered Aetherial Bolt",
+                "Description": "An aetherial bolt of the chosen or preferred element, used to bolster a magic-based normal attack.",
+                "Text": "Up to twice per event, double the natural result of your damage roll value (ie. double the result, before adding any other modifiers.)",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 19,
+                "Name": "Aetherial Manipulation",
+                "Description": "When there are other arther users around (archetypes noted with the Aether tag) gain a +25 bonus to your attack rolls. This can stack up to three times, for a maximum of +75.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 7,
+        "Name": "Aetherohealer",
+        "Description": "A specialist in aether-based healing magic.",
+        "Subtype": "Support",
+        "BaseGrit": 6,
+        "ActiveEffects": [
+            {
+                "EffectId": 20,
+                "Name": "Aetherial Healing",
+                "Description": "Heal others for a set amount, but at the cost of your own aether.",
+                "Text": "Twice per event, can heal another for 2 Grit, at the cost of 1 Grit of the healer's own.",
+                "Table": null
+            },
+            {
+                "EffectId": 21,
+                "Name": "Triage",
+                "Description": "Can quickly patch up allies' wounds, to keep them going longer.",
+                "Text": "This can be used twice per event.",
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Heal 4 Grit.",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Heal 3 Grit.",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "201-600",
+                            "Text": "Heal 2 Grit.",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-200",
+                            "Text": "Heal 1 Grit.",
+                            "Order": 3
+                        }
+                    ]
+                }
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 22,
+                "Name": "Trained Professional",
+                "Description": "+1 rank to Healing feat.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 8,
+        "Name": "Captain",
+        "Description": "A specialist in group warfare and crowd control.",
+        "Subtype": "Support",
+        "BaseGrit": 6,
+        "ActiveEffects": [
+            {
+                "EffectId": 23,
+                "Name": "Tactician",
+                "Description": "Can aid another in combat.",
+                "Text": "Once per encounter, add +100 to another's roll - does not stack with Leadership feat.",
+                "Table": null
+            },
+            {
+                "EffectId": 24,
+                "Name": "Orator",
+                "Description": "Your inspiring words bring out the better combatant in others.",
+                "Text": "Once per encounter, speak something inspiring and all other characters can add +50 to their next roll.",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 25,
+                "Name": "Chessmaster",
+                "Description": "+1 rank to Leadership feat.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 9,
+        "Name": "Field Medic",
+        "Description": "A specialist in alchemical and non-magical healing.",
+        "Subtype": "Support",
+        "BaseGrit": 6,
+        "ActiveEffects": [
+            {
+                "EffectId": 21,
+                "Name": "Triage",
+                "Description": "Can quickly patch up allies' wounds, to keep them going longer.",
+                "Text": "This can be used twice per event.",
+                "Table": {
+                    "Lines": [
+                        {
+                            "Target": "901\u002B",
+                            "Text": "Heal 4 Grit.",
+                            "Order": 0
+                        },
+                        {
+                            "Target": "601-900",
+                            "Text": "Heal 3 Grit.",
+                            "Order": 1
+                        },
+                        {
+                            "Target": "201-600",
+                            "Text": "Heal 2 Grit.",
+                            "Order": 2
+                        },
+                        {
+                            "Target": "0-200",
+                            "Text": "Heal 1 Grit.",
+                            "Order": 3
+                        }
+                    ]
+                }
+            },
+            {
+                "EffectId": 26,
+                "Name": "Resuscitate",
+                "Description": "Can revive unconscious teammates, getting them back into the action.",
+                "Text": "Once per event, can resuscitate an unconscious ally with 0 Grit. The resuscitation is automatically successful in most cases (subject to GM approval.) Make a free Triage roll to determine how many points of Grit the ally recovers.",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 22,
+                "Name": "Trained Professional",
+                "Description": "+1 rank to Healing feat.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    },
+    {
+        "ArchetypeId": 10,
+        "Name": "Researcher",
+        "Description": "Timely insights that can turn the tide of battle.",
+        "Subtype": "Noncombatant",
+        "BaseGrit": 5,
+        "ActiveEffects": [
+            {
+                "EffectId": 27,
+                "Name": "Weak Spot",
+                "Description": "Can find weaknesses in enemies and tactics that can help their allies.",
+                "Text": "Once/Twice per event (GM's choice), can find a weak point in an enemy. Subtract -100 from the enemy\u0027s defense rolls OR add +100 to all allies' attack rolls against that enemy.",
+                "Table": null
+            },
+            {
+                "EffectId": 28,
+                "Name": "Intuition",
+                "Description": "Can quickly learn the pattern of an enemy\u0027s attacks, and find ways to counter them.",
+                "Text": "Once per event, can select a single enemy\u0027s attack type. For the rest of the encounter, all allies add +100 to defense rolls made against that attack type.",
+                "Table": null
+            }
+        ],
+        "PassiveEffects": [
+            {
+                "EffectId": 29,
+                "Name": "Noncombatant",
+                "Description": "Subtract -100 to all normal attack rolls you make.",
+                "Text": null,
+                "Table": null
+            }
+        ]
+    }
+
+]
